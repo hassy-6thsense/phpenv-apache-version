@@ -10,7 +10,7 @@ if [ "$1" = "--complete" ]; then
 fi
 
 PHPENV_APACHE_VERSION="$1"
-PHPENV_APACHE_VERSION_FILE="${PHPENV_ROOT}/php-apache-version"
+PHPENV_APACHE_VERSION_FILE="${PHPENV_ROOT}/plugins/phpenv-apache-version/php-apache-version"
 
 if [ -n "$PHPENV_APACHE_VERSION" ]; then
   phpenv-version-file-write "$PHPENV_APACHE_VERSION_FILE" "$PHPENV_APACHE_VERSION"
